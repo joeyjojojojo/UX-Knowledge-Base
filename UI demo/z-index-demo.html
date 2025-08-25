@@ -1,1 +1,575 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>层级系统 (Z-index/Layer System) 示例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .demo-section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        /* 示例1：基础层级概念 */
+        .layer-stack {
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+        }
+        
+        .layer {
+            position: absolute;
+            width: 150px;
+            height: 120px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .layer:hover {
+            transform: scale(1.05);
+        }
+        
+        .layer-1 {
+            background: #e74c3c;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+        
+        .layer-2 {
+            background: #f39c12;
+            top: 80px;
+            left: 80px;
+            z-index: 2;
+        }
+        
+        .layer-3 {
+            background: #2ecc71;
+            top: 110px;
+            left: 110px;
+            z-index: 3;
+        }
+        
+        .layer-4 {
+            background: #3498db;
+            top: 140px;
+            left: 140px;
+            z-index: 4;
+        }
+        
+        .layer-info {
+            position: absolute;
+            right: 20px;
+            top: 50px;
+            background: #34495e;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 200px;
+        }
+        
+        .layer-info h4 {
+            margin-bottom: 15px;
+            color: #ecf0f1;
+        }
+        
+        .layer-info ul {
+            list-style: none;
+        }
+        
+        .layer-info li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .layer-info li:before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        
+        /* 示例2：实际应用场景 */
+        .realistic-demo {
+            position: relative;
+            height: 400px;
+            background: #ecf0f1;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        /* 页面背景层 z-index: 0 */
+        .page-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #f1f2f6, #ddd);
+            z-index: 0;
+        }
+        
+        /* 主要内容层 z-index: 10 */
+        .main-content {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            height: 200px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* 浮动按钮层 z-index: 50 */
+        .floating-button {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            width: 56px;
+            height: 56px;
+            background: #e91e63;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            z-index: 50;
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .floating-button:hover {
+            transform: scale(1.1);
+        }
+        
+        /* 通知条层 z-index: 100 */
+        .notification {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2ecc71;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+            animation: slideDown 0.5s ease;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+        
+        /* 模态窗口层 z-index: 1000 */
+        .modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .modal {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+        
+        .modal-overlay.active .modal {
+            transform: scale(1);
+        }
+        
+        /* 工具提示层 z-index: 10000 */
+        .tooltip {
+            position: absolute;
+            background: #34495e;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            z-index: 10000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .tooltip.show {
+            opacity: 1;
+        }
+        
+        .tooltip:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #34495e;
+        }
+        
+        /* 控制按钮 */
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .control-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .control-btn:hover {
+            background: #2980b9;
+        }
+        
+        .control-btn.danger {
+            background: #e74c3c;
+        }
+        
+        .control-btn.danger:hover {
+            background: #c0392b;
+        }
+        
+        /* Z-index表格 */
+        .z-index-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .z-index-table th,
+        .z-index-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .z-index-table th {
+            background: #34495e;
+            color: white;
+            font-weight: 500;
+        }
+        
+        .z-index-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .z-value {
+            font-weight: bold;
+            color: #e74c3c;
+            font-family: monospace;
+        }
+        
+        .description {
+            color: #666;
+            font-size: 14px;
+            margin-top: 20px;
+            line-height: 1.6;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .layer-stack {
+                height: 250px;
+            }
+            
+            .layer {
+                width: 120px;
+                height: 100px;
+                font-size: 12px;
+            }
+            
+            .layer-info {
+                position: static;
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>层级系统 (Z-index) 演示</h1>
+        
+        <!-- 示例1：基础层级概念 -->
+        <div class="demo-section">
+            <h2 class="section-title">1. 基础层级概念 - "谁在上面？"</h2>
+            <div class="layer-stack">
+                <div class="layer layer-1">
+                    第1层<br>z-index: 1
+                </div>
+                <div class="layer layer-2">
+                    第2层<br>z-index: 2
+                </div>
+                <div class="layer layer-3">
+                    第3层<br>z-index: 3
+                </div>
+                <div class="layer layer-4">
+                    第4层<br>z-index: 4
+                </div>
+                
+                <div class="layer-info">
+                    <h4>层级规则</h4>
+                    <ul>
+                        <li>数值越大越在上层</li>
+                        <li>上层会遮盖下层</li>
+                        <li>相同z-index按HTML顺序</li>
+                        <li>hover试试看效果</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 示例2：实际应用场景 -->
+        <div class="demo-section">
+            <h2 class="section-title">2. 实际应用场景演示</h2>
+            <div class="realistic-demo" id="realisticDemo">
+                <!-- 背景层 -->
+                <div class="page-background"></div>
+                
+                <!-- 主要内容层 -->
+                <div class="main-content">
+                    <h3>主要内容区域</h3>
+                    <p>这是页面的主要内容，z-index: 10</p>
+                    <p>注意观察不同元素的层级关系</p>
+                </div>
+                
+                <!-- 浮动按钮层 -->
+                <div class="floating-button" id="fabButton" onmouseover="showTooltip(event)" onmouseout="hideTooltip()">
+                    +
+                </div>
+                
+                <!-- 通知条层 -->
+                <div class="notification">
+                    ✓ 操作成功！(z-index: 100)
+                </div>
+                
+                <!-- 模态窗口层 -->
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="modal">
+                        <h3>模态窗口</h3>
+                        <p>我的 z-index 是 1000，所以我在最上层！</p>
+                        <button class="control-btn danger" onclick="closeModal()">关闭</button>
+                    </div>
+                </div>
+                
+                <!-- 工具提示层 -->
+                <div class="tooltip" id="tooltip">
+                    浮动按钮 (z-index: 10000)
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" onclick="showModal()">显示模态窗口</button>
+                <button class="control-btn" onclick="toggleElements()">切换元素显示</button>
+            </div>
+        </div>
+        
+        <!-- 示例3：Z-index标准层级表 -->
+        <div class="demo-section">
+            <h2 class="section-title">3. 标准Z-index层级参考表</h2>
+            <table class="z-index-table">
+                <thead>
+                    <tr>
+                        <th>层级类型</th>
+                        <th>Z-index范围</th>
+                        <th>用途说明</th>
+                        <th>示例</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>背景层</td>
+                        <td class="z-value">-1 ~ 0</td>
+                        <td>页面背景、装饰元素</td>
+                        <td>背景图片、装饰性图形</td>
+                    </tr>
+                    <tr>
+                        <td>内容层</td>
+                        <td class="z-value">1 ~ 99</td>
+                        <td>正常页面内容</td>
+                        <td>文章、卡片、普通按钮</td>
+                    </tr>
+                    <tr>
+                        <td>浮动层</td>
+                        <td class="z-value">100 ~ 999</td>
+                        <td>悬浮在内容上的元素</td>
+                        <td>下拉菜单、浮动按钮、通知条</td>
+                    </tr>
+                    <tr>
+                        <td>覆盖层</td>
+                        <td class="z-value">1000 ~ 9999</td>
+                        <td>遮盖页面的重要元素</td>
+                        <td>模态窗口、抽屉、全屏遮罩</td>
+                    </tr>
+                    <tr>
+                        <td>系统层</td>
+                        <td class="z-value">10000+</td>
+                        <td>系统级别的最高层</td>
+                        <td>工具提示、调试工具、警告弹窗</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="description">
+            <strong>💡 设计要点：</strong>
+            层级系统就像是给界面元素安排"座位"，数值越大的坐在越前排。合理的层级管理能确保重要信息不被遮挡，用户操作流程顺畅。记住：不是所有元素都需要z-index，只有需要调整显示顺序时才使用！
+        </div>
+    </div>
+    
+    <script>
+        let elementsVisible = true;
+        
+        function showModal() {
+            document.getElementById('modalOverlay').classList.add('active');
+        }
+        
+        function closeModal() {
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+        
+        function toggleElements() {
+            const notification = document.querySelector('.notification');
+            const fabButton = document.querySelector('.floating-button');
+            
+            elementsVisible = !elementsVisible;
+            
+            if (elementsVisible) {
+                notification.style.display = 'block';
+                fabButton.style.display = 'flex';
+            } else {
+                notification.style.display = 'none';
+                fabButton.style.display = 'none';
+            }
+        }
+        
+        function showTooltip(event) {
+            const tooltip = document.getElementById('tooltip');
+            const rect = event.target.getBoundingClientRect();
+            const parentRect = event.target.offsetParent.getBoundingClientRect();
+            
+            tooltip.style.left = (rect.left - parentRect.left + rect.width/2) + 'px';
+            tooltip.style.top = (rect.top - parentRect.top - 35) + 'px';
+            tooltip.classList.add('show');
+        }
+        
+        function hideTooltip() {
+            document.getElementById('tooltip').classList.remove('show');
+        }
+        
+        // 点击模态窗口外部关闭
+        document.getElementById('modalOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+        
+        // 键盘事件
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
