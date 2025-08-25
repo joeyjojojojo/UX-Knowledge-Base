@@ -4,17 +4,15 @@
 
 ## 📚 包含的演示
 
-- [空白设计示例](demos/whitespace-demo.html) - 演示空白在界面设计中的重要性
-- [层级系统演示](demos/z-index-demo.html) - 理解z-index和元素层级
-- [基线网格演示](demos/baseline-grid-demo.html) - 学习专业排版技巧
+- [空白设计示例](UI%20demo/whitespace-demo.html) - 演示空白在界面设计中的重要性
+- [层级系统演示](UI%20demo/z-index-demo.html) - 理解z-index和元素层级
+- [基线网格演示](UI%20demo/baseline-grid-demo.html)  - 学习专业排版技巧 
+
 
 ## 🌐 在线预览
 
-访问：https://joeyjojojojo.github.io/ui-elements-demo/
+访问：https://joeyjojojojo.github.io/UX-Knowledge-Base/UI%20demo/index.html 
 
-https://joeyjojojojo.github.io/UX-Knowledge-Base/UI%20demo/index.html 
-
-https://github.com/joeyjojojojo/UX-Knowledge-Base/blob/main/UI%20demo/index.html  
 
 ## 🛠️ 技术栈
 
