@@ -1,1 +1,434 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空白（Whitespace）设计示例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        
+        .example-section {
+            background: white;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        
+        .section-title {
+            background: #34495e;
+            color: white;
+            padding: 15px 25px;
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+        }
+        
+        .bad-example, .good-example {
+            padding: 20px;
+            position: relative;
+        }
+        
+        .bad-example {
+            background: #ffebee;
+            border-bottom: 3px solid #f44336;
+        }
+        
+        .good-example {
+            background: #e8f5e8;
+            border-bottom: 3px solid #4caf50;
+        }
+        
+        .label {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .bad-label {
+            background: #f44336;
+            color: white;
+        }
+        
+        .good-label {
+            background: #4caf50;
+            color: white;
+        }
+        
+        /* 示例1：文字段落空白 */
+        .text-cramped {
+            font-size: 14px;
+            line-height: 1.2;
+            margin: 0;
+            text-align: justify;
+        }
+        
+        .text-spacious {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            max-width: 80%;
+        }
+        
+        /* 示例2：卡片布局空白 */
+        .cards-cramped {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .cards-spacious {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .card-cramped {
+            padding: 8px;
+            font-size: 12px;
+        }
+        
+        .card-spacious {
+            padding: 25px 20px;
+            font-size: 14px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .card-spacious:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* 示例3：按钮空白 */
+        .buttons-cramped {
+            display: flex;
+            gap: 2px;
+        }
+        
+        .buttons-spacious {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .btn-cramped {
+            padding: 5px 8px;
+            font-size: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-spacious {
+            padding: 15px 30px;
+            font-size: 16px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .btn-spacious:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+        }
+        
+        /* 示例4：表单空白 */
+        .form-cramped {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-cramped input {
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 12px;
+        }
+        
+        .form-spacious {
+            max-width: 400px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-spacious label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .form-spacious input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-spacious input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        
+        /* 示例5：导航空白 */
+        .nav-cramped {
+            background: #333;
+            padding: 2px;
+        }
+        
+        .nav-cramped a {
+            color: white;
+            padding: 3px 5px;
+            text-decoration: none;
+            font-size: 12px;
+            margin-right: 2px;
+        }
+        
+        .nav-spacious {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+        
+        .nav-spacious a {
+            color: #333;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 15px;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        
+        .nav-spacious a:hover {
+            background: #f8f9fa;
+            color: #007bff;
+        }
+        
+        .highlight-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .highlight-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .cards-spacious {
+                grid-template-columns: 1fr;
+            }
+            
+            .buttons-spacious {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>空白（Whitespace）设计示例</h1>
+        
+        <div class="highlight-box">
+            <h3>💡 观察要点</h3>
+            <p>注意对比左右两侧的差异，感受空白对视觉效果和用户体验的影响</p>
+        </div>
+        
+        <!-- 示例1：文字段落空白 -->
+        <div class="example-section">
+            <h2 class="section-title">1. 文字段落中的空白运用</h2>
+            <div class="comparison">
+                <div class="bad-example">
+                    <div class="label bad-label">❌ 缺少空白</div>
+                    <p class="text-cramped">
+                        这是一段没有足够空白的文字示例。行间距很小，字体也比较小，整体看起来很拥挤。这样的排版会让用户感到压抑，阅读起来也比较费力。长时间阅读这样的文字会让人感到疲劳，用户体验很差。而且这样密集的排版看起来不够专业，给人一种廉价的感觉。
+                    </p>
+                </div>
+                <div class="good-example">
+                    <div class="label good-label">✅ 合理空白</div>
+                    <p class="text-spacious">
+                        这是一段有着合理空白的文字示例。适当的行间距和字体大小让阅读变得舒适。
+                    </p>
+                    <p class="text-spacious">
+                        充足的空白不仅提升了可读性，还让整体设计看起来更加专业和高端。
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 示例2：卡片布局空白 -->
+        <div class="example-section">
+            <h2 class="section-title">2. 卡片布局中的空白运用</h2>
+            <div class="comparison">
+                <div class="bad-example">
+                    <div class="label bad-label">❌ 空白不足</div>
+                    <div class="cards-cramped">
+                        <div class="card card-cramped">产品A</div>
+                        <div class="card card-cramped">产品B</div>
+                        <div class="card card-cramped">产品C</div>
+                        <div class="card card-cramped">产品D</div>
+                        <div class="card card-cramped">产品E</div>
+                        <div class="card card-cramped">产品F</div>
+                    </div>
+                </div>
+                <div class="good-example">
+                    <div class="label good-label">✅ 空白充足</div>
+                    <div class="cards-spacious">
+                        <div class="card card-spacious">产品A</div>
+                        <div class="card card-spacious">产品B</div>
+                        <div class="card card-spacious">产品C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 示例3：按钮空白 -->
+        <div class="example-section">
+            <h2 class="section-title">3. 按钮中的空白运用</h2>
+            <div class="comparison">
+                <div class="bad-example">
+                    <div class="label bad-label">❌ 拥挤布局</div>
+                    <div class="buttons-cramped">
+                        <button class="btn-cramped">确定</button>
+                        <button class="btn-cramped">取消</button>
+                        <button class="btn-cramped">重置</button>
+                        <button class="btn-cramped">帮助</button>
+                    </div>
+                </div>
+                <div class="good-example">
+                    <div class="label good-label">✅ 舒适间距</div>
+                    <div class="buttons-spacious">
+                        <button class="btn-spacious">确定</button>
+                        <button class="btn-spacious">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 示例4：表单空白 -->
+        <div class="example-section">
+            <h2 class="section-title">4. 表单中的空白运用</h2>
+            <div class="comparison">
+                <div class="bad-example">
+                    <div class="label bad-label">❌ 紧密排列</div>
+                    <div class="form-cramped">
+                        <input type="text" placeholder="姓名">
+                        <input type="email" placeholder="邮箱">
+                        <input type="tel" placeholder="电话">
+                        <input type="text" placeholder="公司">
+                    </div>
+                </div>
+                <div class="good-example">
+                    <div class="label good-label">✅ 呼吸空间</div>
+                    <div class="form-spacious">
+                        <div class="form-group">
+                            <label>姓名</label>
+                            <input type="text" placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label>邮箱</label>
+                            <input type="email" placeholder="请输入您的邮箱">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 示例5：导航空白 -->
+        <div class="example-section">
+            <h2 class="section-title">5. 导航栏中的空白运用</h2>
+            <div class="comparison">
+                <div class="bad-example">
+                    <div class="label bad-label">❌ 压抑感</div>
+                    <div class="nav-cramped">
+                        <a href="#">首页</a>
+                        <a href="#">产品</a>
+                        <a href="#">服务</a>
+                        <a href="#">关于</a>
+                        <a href="#">联系</a>
+                    </div>
+                </div>
+                <div class="good-example">
+                    <div class="label good-label">✅ 优雅间距</div>
+                    <div class="nav-spacious">
+                        <a href="#">首页</a>
+                        <a href="#">产品</a>
+                        <a href="#">服务</a>
+                        <a href="#">关于</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <h3>🎯 空白设计总结</h3>
+            <p><strong>记住：</strong>空白不是"浪费"，而是设计的重要组成部分。适当的空白能让内容更突出，界面更高端，用户体验更好！</p>
+        </div>
+    </div>
+</body>
+</html>
