@@ -12,6 +12,10 @@
 
 访问：https://joeyjojojojo.github.io/ui-elements-demo/
 
+https://joeyjojojojo.github.io/UX-Knowledge-Base/UI%20demo/index.html 
+
+https://github.com/joeyjojojojo/UX-Knowledge-Base/blob/main/UI%20demo/index.html  
+
 ## 🛠️ 技术栈
 
 - HTML5
