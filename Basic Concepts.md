@@ -242,8 +242,13 @@ Pagination
 Information Display
 
 ### 1. 卡片
-Card 
+<details>
+<summary>Card</summary>
+  
+  ![示意图](Pics/Card__Gemini.png)
 
+</details>
+ 
 #### 内容聚合卡片 
 Content Aggregation Card，将相关的信息打包在一起，让用户可以快速浏览和理解。
 - 样式特点：通常包含标题、图片、简短描述或标签。通常有阴影或边框，使其看起来像“浮”在页面上。
