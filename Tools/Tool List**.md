@@ -30,8 +30,8 @@
 | **`Gemini`**        | 强大的多模态AI模型，支持多种应用           | API：0.0025美元/千token     |                                       |
 | **`Claude`**        | 长文本处理能力强，适合处理长文本           | 25美元/月                   | API：0.008美元/千token                 |
 | **`ChatGPT`**       | 强大的自然语言处理工具，支持多模态          | 20美元/月                  | API：0.01美元/千token                  |
+| **`Google AI Studio`**  | AI开发平台，支持微调Gemini系列模型     | API：0.0025美元/千token    | 支持创建 Agent、MCP                    |
 | `Deepseek API`      | 深度搜索优化，适合高密度查询               | 0.005美元/千token          |                                       |
-| `Google AI Studio`  | AI开发平台，支持微调Gemini系列模型         | API：0.0025美元/千token    | 支持创建 Agent、MCP                    |
 | `n8n`               | 工作流平台，低代码开发，高度可定制         | 开源，免费使用，付费托管服务  | 跨应用集成、自动化任务和工作流          | 
 | `扣子 Coze`         | 国产无代码平台，适合快速构建应用           | 无                          | 工作流平台                            |
 | `ComfyUI`           | 图像与视频生成工具                       | 无                          | 基于Stable Diffusion，支持工作流      |
