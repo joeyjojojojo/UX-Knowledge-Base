@@ -22,3 +22,10 @@
   
 ### git 快捷键 
 Wiki文档中 write 和 preview 切换：Ctrl + Shift + P 
+
+### 资源 
+- Git 极简使用指南：https://cloud.tencent.com/developer/article/2531006
+- 小白够用教程：https://zhuanlan.zhihu.com/p/372512096
+- 官方文档：https://docs.github.com/zh 
+
+
