@@ -1,6 +1,7 @@
 
 什么是固钉 (Affix)  
 固钉是一个将页面元素"钉"在可视范围内的组件。当内容区域比较长，需要滚动页面时，这部分内容对应的操作或者导航需要在滚动范围内始终展现。  
+<img width="164" height="164" alt="doc-affix" src="https://github.com/user-attachments/assets/363b19b0-0d3b-42dd-b3bb-d8a5e50e97ed" />
 
 示例演示：https://joeyjojojojo.github.io/UX-Knowledge-Base/UI%20demo/Affix.html  
 
