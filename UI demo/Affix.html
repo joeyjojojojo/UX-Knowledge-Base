@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affix 固钉演示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segmented UI', Roboto, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            min-height: 200vh;
+        }
+
+        /* 页面头部 */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* 主要内容区 */
+        .main-content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .sidebar {
+            width: 250px;
+            flex-shrink: 0;
+        }
+
+        .content {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        /* 固钉导航菜单 */
+        .affix-nav {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .affix-nav.fixed {
+            position: fixed;
+            top: 20px;
+            width: 250px;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border: 2px solid #667eea;
+        }
+
+        .nav-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .nav-item {
+            padding: 12px 16px;
+            margin: 5px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #666;
+            border-left: 3px solid transparent;
+        }
+
+        .nav-item:hover {
+            background: #f0f2ff;
+            color: #667eea;
+            border-left-color: #667eea;
+        }
+
+        .nav-item.active {
+            background: #667eea;
+            color: white;
+            border-left-color: #4c63d2;
+        }
+
+        /* 固钉按钮组 */
+        .affix-buttons {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .affix-buttons.fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .action-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .action-btn:hover {
+            background: #5a67d8;
+            transform: translateY(-1px);
+        }
+
+        /* 内容区域 */
+        .content-section {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+        }
+
+        .content-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        .content-section p {
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* 滚动指示器 */
+        .scroll-indicator {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: rgba(102, 126, 234, 0.9);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            z-index: 200;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+
+        /* 状态提示 */
+        .status-indicator {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #4ade80;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            z-index: 200;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .status-indicator.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Affix 固钉组件演示</h1>
+            <p>滚动页面查看固钉效果 - 导航菜单和操作按钮将始终保持可见</p>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <!-- 固钉导航菜单 -->
+                <div class="affix-nav" id="affixNav">
+                    <div class="nav-title">📍 导航菜单 (固钉)</div>
+                    <div class="nav-item active" data-target="section1">🏠 产品介绍</div>
+                    <div class="nav-item" data-target="section2">⚡ 功能特性</div>
+                    <div class="nav-item" data-target="section3">🎯 使用案例</div>
+                    <div class="nav-item" data-target="section4">📊 技术参数</div>
+                    <div class="nav-item" data-target="section5">💡 最佳实践</div>
+                </div>
+
+                <!-- 固钉操作按钮 -->
+                <div class="affix-buttons" id="affixButtons">
+                    <div class="button-group">
+                        <button class="action-btn">💾 保存草稿</button>
+                        <button class="action-btn">📤 立即发布</button>
+                        <button class="action-btn">👀 预览</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content-section" id="section1">
+                    <h2>🏠 产品介绍</h2>
+                    <p>Affix 固钉组件是一个非常实用的UI组件，它可以将页面中的重要元素"固定"在用户的视野范围内。当用户滚动页面时，被固钉的元素会保持在屏幕的指定位置，确保用户随时能够访问到这些关键功能。</p>
+                    <p>在企业级应用中，固钉组件特别适用于长表单、文档阅读、数据报表等场景，可以显著提升用户体验和操作效率。</p>
+                    <p>固钉的实现原理基于CSS的position属性，通过JavaScript监听滚动事件，动态切换元素的定位方式，从而实现"吸附"效果。</p>
+                </div>
+
+                <div class="content-section" id="section2">
+                    <h2>⚡ 功能特性</h2>
+                    <p>1. <strong>智能定位</strong>：自动检测滚动位置，在合适的时机触发固定效果</p>
+                    <p>2. <strong>灵活配置</strong>：支持顶部固钉、底部固钉，可自定义触发偏移量</p>
+                    <p>3. <strong>平滑过渡</strong>：提供流畅的动画效果，避免突兀的视觉跳跃</p>
+                    <p>4. <strong>响应式适配</strong>：在不同屏幕尺寸下都能正常工作</p>
+                    <p>5. <strong>性能优化</strong>：使用节流技术，避免频繁的重绘和重排</p>
+                </div>
+
+                <div class="content-section" id="section3">
+                    <h2>🎯 使用案例</h2>
+                    <p><strong>导航菜单固钉</strong>：在长页面中，将侧边导航菜单固钉，方便用户快速跳转到不同章节。这是最常见的应用场景，特别适用于文档网站、博客文章、产品介绍页面等。</p>
+                    <p><strong>操作按钮固钉</strong>：将重要的操作按钮（如保存、提交、购买）固钉在页面底部或顶部，确保用户在任何时候都能快速执行关键操作。</p>
+                    <p><strong>表格头部固钉</strong>：在数据表格很长的情况下，将表头固钉在顶部，用户滚动查看数据时仍能看到列标题。</p>
+                    <p><strong>工具栏固钉</strong>：在编辑器或设计工具中，将常用的工具栏固钉，提高工作效率。</p>
+                </div>
+
+                <div class="content-section" id="section4">
+                    <h2>📊 技术参数</h2>
+                    <p><strong>触发条件</strong>：可设置距离顶部或底部的偏移量来控制固钉的触发时机</p>
+                    <p><strong>定位方式</strong>：支持relative、fixed、sticky等多种定位模式</p>
+                    <p><strong>滚动容器</strong>：可指定监听的滚动容器，默认为window</p>
+                    <p><strong>z-index控制</strong>：自动管理层级关系，确保固钉元素在正确的层级显示</p>
+                    <p><strong>兼容性</strong>：支持主流浏览器，包括移动端浏览器</p>
+                </div>
+
+                <div class="content-section" id="section5">
+                    <h2>💡 最佳实践</h2>
+                    <p><strong>适度使用</strong>：不要过度使用固钉，避免太多元素同时固定造成界面拥挤</p>
+                    <p><strong>移动端优化</strong>：在移动端要特别注意固钉元素的大小，避免占用过多屏幕空间</p>
+                    <p><strong>视觉层次</strong>：为固钉元素添加合适的阴影和边框，让它们在视觉上与页面内容区分开</p>
+                    <p><strong>交互反馈</strong>：在固钉状态变化时提供适当的动画效果，增强用户体验</p>
+                    <p><strong>可访问性</strong>：确保固钉元素不会遮挡重要内容，特别是在小屏幕设备上</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 滚动提示 -->
+    <div class="scroll-indicator">
+        👆 向上滚动<br/>
+        👇 向下滚动<br/>
+        查看固钉效果
+    </div>
+
+    <!-- 状态指示器 -->
+    <div class="status-indicator" id="statusIndicator">
+        🎯 固钉已激活
+    </div>
+
+    <script>
+        // 固钉功能实现
+        function initAffix() {
+            const affixNav = document.getElementById('affixNav');
+            const affixButtons = document.getElementById('affixButtons');
+            const statusIndicator = document.getElementById('statusIndicator');
+            
+            const navOffsetTop = affixNav.offsetTop;
+            const buttonsOffsetTop = affixButtons.offsetTop;
+            
+            function updateAffix() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                // 导航菜单固钉
+                if (scrollTop > navOffsetTop - 20) {
+                    if (!affixNav.classList.contains('fixed')) {
+                        affixNav.classList.add('fixed');
+                        statusIndicator.classList.add('show');
+                        setTimeout(() => statusIndicator.classList.remove('show'), 2000);
+                    }
+                } else {
+                    affixNav.classList.remove('fixed');
+                }
+                
+                // 按钮组固钉（始终显示在右下角）
+                if (scrollTop > 200) {
+                    affixButtons.classList.add('fixed');
+                } else {
+                    affixButtons.classList.remove('fixed');
+                }
+            }
+            
+            // 节流函数，优化性能
+            let ticking = false;
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(updateAffix);
+                    ticking = true;
+                    setTimeout(() => ticking = false, 16);
+                }
+            }
+            
+            window.addEventListener('scroll', requestTick);
+            
+            // 导航菜单点击事件
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const target = document.getElementById(this.dataset.target);
+                    if (target) {
+                        target.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', initAffix);
+    </script>
+</body>
+</html>
