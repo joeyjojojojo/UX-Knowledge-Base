@@ -1,3 +1,23 @@
+路线规划
+
+**1、需求解构与信息架构 🏗️：**
+
+核心：学习如何通过用户画像（Personas）和用户旅程图（User Journeys）定义 AI 绘图所需的“上下文”。  
+价值：你会知道在 Prompt 中加入哪些业务逻辑，让 AI 不再只画“好看但没用”的图。
+
+**2、视觉层次与交互规范 📏：**
+
+核心：掌握网格系统（Grids）、排版（Typography）和视觉层次（Visual Hierarchy）。  
+价值：当你看到 AI 生成的草图时，你能立刻判断哪里“不专业”，并能在 Figma 中快速手动修正或通过指令微调。
+
+**3、设计系统的提示词工程 (Prompt Engineering) 🤖：**
+
+核心：学习组件化思维（Atoms, Molecules, Organisms）。  
+价值：让 AI 按照一致的设计语言生成 UI，而不是随机生成零散的页面。
+
+
+
+--------
 Google UX 设计专业证书（Google UX Design Professional Certificate）是一套由 Google 设计的系统化入门课程，通常在 Coursera 平台上提供。该证书由 7 门核心课程组成，涵盖了从基础理论到工具使用（Figma 和 Adobe XD），再到作品集产出的全过程。
 
 核心课程大纲
