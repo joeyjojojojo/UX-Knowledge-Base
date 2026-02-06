@@ -31,3 +31,88 @@
 **Shabi - 交互设计师**
 - 介绍如何在设计过程中融入可访问性和包容性设计。
 - Introducing how to incorporate accessibility and inclusive design into the design process.
+
+
+
+### The basics of user experience design  
+
+user experience is how a person, the user, feels about interacting with or experiencing a product.   
+A product is a good, service, or feature. 商品、服务、功能   
+
+for a user to have a good experience, the product needs to be usable, equitable, enjoyable, and useful. 可用性、公平性、愉悦性、实用性    
+usable - the design, structure, and purpose of the product are clear to everyone.   
+  ketchup bottle - glass >> plastic squeezable = easier to use & control 挤出来的量  
+
+equitable - your designs are useful and marketable to people with diverse abilities and backgrounds  
+  for people with very different life experiences from your own  
+
+enjoyable - creates a positive connection between the user and the product  
+  ordering takeout food online - see photos of dishes and read reviews from other people who have eaten there，>> make a more informed choice about what to order， you feeling happier about the product  
+  ** how do we figure out what makes a user happy with the product? research 
+
+useful - solve our problem   
+  map app - if you're lost, a map app telling you how to get home is useful. But if the app can't find your current location, it's not so useful anymore. 
+
+
+WHY ?  
+When people like a product  >>  they use that product a lot  +  and they recommended it to their friends. 
+
+
+阅读材料：https://www.coursera.org/learn/foundations-user-experience-design/supplement/IXXnj/characteristics-of-a-good-user-experience  
+
+
+### Design for good user experience  
+Predicting user roadblocks and potential design mishaps is what good UX design is all about.  
+  Norman doors - poor user experience 
+
+case1：icon - save space on the screen, pleasing to look at, easy to understand, no matter the user's native language.   
+       ** But sometimes the meaning of an icon is impossible to figure out  >>  icon + text  
+
+case2：shopping app - add to shopping cart, then show out of stock 缺货  
+
+阅读材料：https://www.coursera.org/learn/foundations-user-experience-design/supplement/1uCov/review-identify-good-user-experience 
+
+
+### The product development lifecycle   
+  Brainstorm - discovery：needs or challenges the user might have.  ** research 
+  Define - is all about using the insights from the brainstorm stage and starting to narrow the focus. the team determines concrete ways that the product being developed will impact the user   
+    storyboards - sketches that help explore the user's experience  
+    wireframes - provide outlines of the content layout.  
+    prototypes - models that allow UX designers to test the functionality of a design. 
+  Design - actively develop ideas, and they also check that all specifications from the define stage are realistic.   是否现实 ？    
+  
+  Test - the team evaluates the product design based on feedback from potential users.   
+         ** helps the team focus on the user first and foremost and the designs second.  
+         ** interactivity of the design：UX designers and front-end engineers   
+
+  Launch - 上线  
+
+阅读材料：https://www.coursera.org/learn/foundations-user-experience-design/supplement/Otp7y/learn-more-about-the-product-development-life-cycle  
+
+
+
+interaction designers, visual designers, and motion designers    
+logos, illustrations, or icons.   
+font color and size, or work on product layouts.    
+create smooth transitions between pages on an app or a website.   
+
+graphic designers - create visuals that tell a story or message. work on the appearance of a physical product, like an invitation or a poster, while UX 平面设计    
+UX researchers  
+UX writers - make the language within a product clearer to make the user experience more intuitive. writing labels for buttons or adjusting the tone to be formal or friendly. 
+
+production designers - make sure the first and final designs match in the finished product materials and that the assets are ready to be handed off to the engineering team.   
+  The assets are everything from text and images to the design specifications, like font style, color, size, and spacing.   
+
+UX engineers - translate the design's intent into a functioning experience, like a website or an app. 
+
+UX program managers - ensure clear and timely communication so that the process of building a useful product moves smoothly from start to finish.   
+  setting up goals and writing project plans.   
+
+阅读材料：https://www.coursera.org/learn/foundations-user-experience-design/supplement/7o3K0/user-experience-careers  
+
+
+
+
+
+
+
