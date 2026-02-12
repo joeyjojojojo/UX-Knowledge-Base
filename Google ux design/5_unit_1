@@ -22,11 +22,219 @@ https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/uQzEA/
 
 
 
-### 
+### Introduction to foundational elements of visual design  
+typography, the use of text and fonts. help add hierarchy to your designs, make text easy to read, and add visual style.       
+color, color wheel, helps us to find colors that are harmonious or complementary   
+iconography, the images or symbols associated with a subject or idea.    
+size,  
+shape,  
+direction  
+
+
+### Typography in UX design  
+the use of text and font  
+3 steps to use: Selecting a type classification, picking a typeface, and choosing a font.  
+
+最受欢迎的两种字体：Serif, Sans Serif  --  通过形态区分 type classification，前者有小尾巴，后者是平直线（T）   
+Typefaces, 通过以下特征区分 stroke weight, shape, type of serif, line lengths. 常见 serif typefaces, Times New Roman, Geogia, Cambria; 常见 sans serif typefaces, Arial, Helvetica, Verdana     
+font, 主要指 size, thickness, emphasis of letters  
+
+
+### The importance of typography    
+To help readers better navigate the page, we need to create a hierarchy.   
+typographic hierarchy - create divisions that show users where to focus and how to find information.   
+Creating visual cues  
+
+Legibility 文本的可读性  
+make the product easier to read and navigate  
+
+Brand guidelines are visual style choices used to communicate a brand's identity, values, and mission.   
+
+阅读材料：Work with type in mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/Tx6oY/work-with-type-in-mockups    
+主要在讲如何配置文本内容    
+
+阅读材料：https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/YKA8k/add-product-copy-to-mockups  
+占位文案 vs 真实文案  
+
+阅读材料：Review: Add typography to project mockups    
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/JgsVB/review-add-typography-to-project-mockups    
 
 
 
+### Color in UX design  
+
+Colors can convey emotions, signal actions, and add variety.   
+
+Red, attracts a lot of attention. That's why things like exit signs, emergency buttons, and stop signs are red.   
+Blue, communicate serenity and feelings of calmness or peace. That's one reason why blue is considered widely appealing.   
+
+color choices and combinations are used in UX design to add emphasis and communicate branding and can impact accessibility.   
+
+Add emphasis  
+a focal ponit, an important action you want users to take    
+60-30-10 rule, One neutral color makes up 60 percent of the color palette in your design. backgrounds, lines, text    
+A second complementary color makes up 30 percent of the palette.   
+A third accent color makes up 10 percent of the palette to add emphasis.   
 
 
+communicate branding, which is the visual appearance and voice of a company.  
+color helps define a product's visual identity, making it stand out among competitors.  
+these colors are consistent across all products, which makes designs from the brand easy to identify instantly.   
+
+
+impact the accessibility of designs.  
+follow Web Content Accessibility Guidelines, or WCAG, on color contrast standards to make sure your designs are accessible.   
+
+阅读材料：Work with color in mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/MDi11/work-with-color-in-mockups  
+如何在 Figma 中配置颜色  
+  
+阅读材料：Accessibility considerations for color  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/Ca3gb/accessibility-considerations-for-color  
+
+阅读材料：Review: Add color to project mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/7Um7H/review-add-color-to-project-mockups  
+
+
+### Iconography in UX design  
+
+Iconography is a system of graphic images or symbols that are associated with a subject or an idea. We call these images and symbols icons.   
+limit wasted tech space,   
+catch the user's attention   
+are an easy way to transition to another page or location.   
+
+icons indicate specific actions   
+icons provide supplementary information, like how a battery icon tells you that it may be time to recharge a device.  
+
+some icons are commonly known through their widespread use.   house icon   
+add a text label to describe what the icon means. 增加 accessible     
+
+** Google's Material Design page, which has a list of free icons that are available for anyone to use.   
+click on Resources.  
+在 Figma 中粘贴时，可以使用添加元素功能，方便把拷贝好的元素，精准地放在目标位置   
+
+阅读材料：Work with icons in mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/t1b2M/work-with-icons-in-mockups   
+
+阅读材料：Review: Add icons to project mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/epuvd/review-add-icons-to-project-mockups  
+
+
+课程插件：
+关于UI样式的考试题目，一个比较好的试题呈现和交互方案  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/ungradedWidget/XQtY8/build-a-mockup-from-foundational-elements  
+
+
+阅读材料：Learn about more visual design elements   
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/WynN7/learn-about-more-visual-design-elements  
+
+
+
+### Add images to your mockups  
+
+communicate a message without using words, important for decision    
+scanning, scrolling 交互，使用真实图片 mockup  
+
+Images also create an emotional response from users.  
+To create this emotional response, it's important that the image fits the UI or user interface, which is concerned with how a digital product's interface looks and functions.    
+The image added some levity and personality to a product reliability issue that users connected with. 这里指有情感渲染效果的插画   
+add visual interest in balance to UI pages that are light on features or service issues.    
+Images can also set a product apart from the competition.   
+
+To review, images help enhance your designs, create connection to the product for users, and establish a stronger brand presence. 
+
+阅读材料：Find stock images for mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/cn7AD/find-stock-images-for-mockups  
+
+阅读材料：Additional design considerations  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/opCYh/additional-design-considerations  
+超链接、按钮、输入框  
+
+
+### layouts  
+ways to arrange elements on a page.   
+Layouts usually refer to the specific placement of text, style, icons, and images.   
+
+The goal of layouts is to present information in a logical way, making the important elements stand out.   
+
+模板化程度比较高的页面类型 home screens, login screens, and even checkout screens  
+
+
+### Use grids to guide layouts  
+the correct placement of elements on your page can improve user flow and make it easier to navigate.   
+
+basic grids. These intersecting lines divide pages into small squares that allow you to easily layout elements in a design.   
+basic grids are useful to help you design consistently  
+
+A layout grid is a series of columns and alleys that allow you to organize elements in a design.   
+Columns are the colored blocks, and alleys are the spaces between the columns.   
+
+website on a laptop or desktop computer, the layout grid might have 12 columns.   
+tablet or app includes four to eight columns  
+a smartwatch has only one column.   
+
+grids create clarity and consistency. An effective grid guides the eye, making it easier and more pleasant to scan elements on the screen.   
+grids quicken the design process, making it faster to place elements on the screen.    
+grids make it easier to collaborate on designs.  
+>>> visually appealing layout  
+
+阅读材料：Create grids in mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/U8TTJ/create-grids-in-mockups  
+
+阅读材料：Review: Create grids in project mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/bfw0D/review-create-grids-in-project-mockups  
+
+
+### Use containment in layouts  
+
+Containment uses visual barriers to keep designs neat and organized.   
+Barriers like lines or colors help limit content to a specific section of a design.   
+
+There are four methods of containment: dividers, borders, fill, and shadow.   
+dividers, lines that separate sections. They can be simple yet effective tools for quickly breaking up content that doesn't belong together.   
+borders, use lines to break up sections of a page. Borders are continuous lines that often form shapes like squares or rectangles.   
+fill, assigns colors to borders and shapes, just as you might think the color fills in the object. This makes content stand out, which creates a new focal point within the mockup.   
+shadows, create dimension. Often, designers use shadows in combination with borders or fill. Shadows help break up elements even further. You feel like it's coming off the page.     
+
+阅读材料：Create containment in mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/IHPDf/create-containment-in-mockups   
+
+阅读材料：Review: Create containment in project mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/eqqVv/review-create-containment-in-project-mockups  
+
+
+### Use negative (white) space in layouts  
+
+White space is the gaps between elements in a design. often referred to as negative space.   
+
+the use of white space can provide emphasis on a focal point within the design. help focus the user on an action they need to take.   
+For example, think about the Google Search homepage; the search bar and Google logo are surrounded by white space. The use of white space clearly communicates the action users should take: search.   
+
+the use of white space can help group items together, which is also known as proximity.   
+When elements like buttons or text are placed close to each other on a page, users naturally group these elements together and expect them to be related.   
+
+white space helps with readability. Leaving more white space between elements makes it easier to focus on each element.   
+
+Having too little white space increases the chance of error.   
+
+阅读材料：Use negative space in mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/kxQ6S/use-negative-space-in-mockups  
+
+
+试题插件：https://www.coursera.org/learn/high-fidelity-designs-prototype/ungradedWidget/y3uiW/test-your-knowledge-on-containment-and-negative-space-in-design  
+
+阅读材料：Review: Revise project mockups by adding negative space  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/eoQbY/review-revise-project-mockups-by-adding-negative-space  
+
+阅读材料：Common design patterns in apps  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/FG3iy/common-design-patterns-in-apps  
+APP 中的场景界面  
+
+
+机器人对话引导学习：https://www.coursera.org/learn/high-fidelity-designs-prototype/coach/gEeR2/coach-dialogue-consider-color-in-mockups  
+
+阅读材料：Glossary terms from course 5, module 1  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/zLZfW/glossary-terms-from-course-5-module-1  
 
 
