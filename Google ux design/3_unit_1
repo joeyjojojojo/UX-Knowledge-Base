@@ -1,2 +1,100 @@
 Course 3	Build Wireframes and Low-Fidelity Prototypes	画图阶段： 纸上草图、Figma 低保真原型。 
 https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/home/module/1 
+
+### introduction  
+storyboards, wire frames, and low fidelity prototypes.    
+
+define user needs and problem statements and ideas for design solutions  
+
+Ideation process 探索各种可能的解决方案    
+
+阅读材料：https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/axymG/welcome-to-course-3    
+延伸材料：Figma功能变更的说明材料 https://help.figma.com/hc/en-us/articles/23954856027159-Navigating-UI3   
+
+阅读材料：Introduction to prototypes  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/zGFoO/introduction-to-prototypes  
+
+
+### Introduction to user flows  
+At this point in the design process, you should have a clear understanding of who your users are and how they behave.  
+
+A user flow is the path taken by a typical user on an app or website so they can complete a task from start to finish.   
+they include shapes that represent different interactions.   
+Circles indicate the actions users take when moving through a product design.   
+Rectangles indicate the screens of a digital product that users will experience while completing tasks.   
+Diamonds symbolize the decisions users make and either move them forward through the flow or back to an earlier part of the flow.   
+Lines provide direction through the user flow based on each user's decision.   
+
+eg. dog walking app  
+阅读材料：Outline a user flow  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/QIehP/outline-a-user-flow  
+
+阅读材料：Review: Outline the user flow for projects  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/Leofv/review-outline-the-user-flow-for-projects    
+里面提供了 User flow 模板  
+
+
+### Introduction to storyboarding user flows  
+A storyboard is a series of panels or frames that visually describe and explore a user's experience with a product. 
+visualize potential solutions to problems the user is facing    
+outline an ideal flow for your design    
+making a strong visual connection between the insights you uncovered during research and the flow of the experience.   
+aid to explain your ideas to stakeholders, because they can visualize how the product you're designing will be used.   
+storyboard should focus on just the most important parts of a user's experience with the product.   
+
+The four key elements of a storyboard   
+the character, the user in your story.  
+the scene, helps us imagine the user's environment.   
+the plot, describes the benefit or solution of the design.   
+the narrative, describes the user's need or problem and how the design will solve the problem.  
+
+template: scenario、visuals、captions. 情境、画面、说明文字  
+Problem statement  
+Goal statement  
+
+type 1：big picture storyboard 全局   
+focuses on the user experience.     
+think about how people will use the product throughout their day and why that product will be useful.   
+helps you understand the entire user experience, including the different challenges, potential pain points, and types of interactions the user will encounter.   
+we want to include emotion in our big picture storyboard. How will the user use our dog walking app? Why will the app be useful? And why will the user be delighted by the app?   
+>> understanding how a user feels while experiencing your product is an essential part of the design process.   
+
+type 2：close-up storyboard 特写   
+the sketches in each panel focus on the product instead of on the user experiencing that product.   
+While big-picture storyboards focus on the how and the why, close-up storyboards focus on the what.   
+What happens on each screen of the product?   
+What does the user do to transition from one screen to another?   
+And after you've created the storyboard, what are potential problems with the flow?   
+** only need to pick a few key screens to sketch in order to demonstrate the product experience. 
+the close-up storyboard is less about emotion, since we're not focused on the user.   
+Instead, the close-up storyboard is focused on the practicalities of the design itself. 设计的实用性     
+focuses on the details within your product, like screens of an app   
+
+阅读材料：Learn more about creating storyboards  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/eNAq1/learn-more-about-creating-storyboards  
+里面提供了 storyboard 模板  
+
+阅读材料：Review: Create project storyboards  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/9OVnD/review-create-project-storyboards  
+
+
+### Introduction to wireframes  
+low fidelity, has a lower amount of complexity and is less refined or polished. We call low-fidelity designs lo-fi for short.   
+when we want to get ideas out quickly and leave room for exploration.   
+
+high fidelity, closely matches the look-and-feel of the final product and is more refined or polished overall. hi-fi for short   
+when we want to test a design that looks like a real product and get more specific feedback from users.   
+
+A wireframe is a basic outline of a digital experience, like an app or a website.   
+wireframes establish the basic structure of a page. before any visual considerations, like color or images, are added.   
+guiding question when creating wireframes: How do I organize information on the page in a way that makes sense for users?   
+
+wireframes highlight the intended function of the product.  
+when drawing the wireframe, you should think about how the elements serve the overall functionality.     
+
+wireframes help designers save time and resources.   
+allow the team to quickly try out different design options.     
+serve as a guide for everyone involved in the project, which saves time later.   
+
+
+
