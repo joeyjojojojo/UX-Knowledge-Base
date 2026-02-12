@@ -1,3 +1,47 @@
+第一阶段：夯实理论基础  
+Course 1: Foundations of User Experience (UX) Design   
+https://www.coursera.org/learn/foundations-user-experience-design  
+
+重点： 了解 UX 行业、基本术语以及设计冲刺。  
+
+Course 2: Start the UX Design Process: Empathize, Define, and Ideate  
+https://www.coursera.org/learn/start-ux-design-process  
+
+重点： 学习用户调研、创建用户画像、确定设计痛点。  
+
+
+第二阶段：动手原型设计  
+Course 3: **Build Wireframes and Low-Fidelity Prototypes**  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes  
+
+重点： 开始用 Figma 画草图，建立初级原型逻辑。  
+
+Course 4: Conduct UX Research and Test Early Concepts  
+https://www.google.com/search?q=https://www.coursera.org/learn/ux-research-testing  
+
+重点： 学习如何通过测试发现你设计中的错误。  
+
+
+第三阶段：精进视觉与多平台  
+Course 5: **Create High-Fidelity Designs and Prototypes in Figma**  
+https://www.google.com/search?q=https://www.coursera.org/learn/high-fidelity-designs-prototypes  
+
+重点： 让你的设计看起来像个真实的、精美的 App。  
+
+Course 6: Responsive Web Design in Adobe XD  
+https://www.coursera.org/learn/responsive-web-design-adobe-xd  
+
+重点： 学习网页端（电脑、平板、手机）的适配。  
+
+第四阶段：收官作品集  
+Course 7: Design a User Experience for Social Good & Prepare for Jobs  
+https://www.google.com/search?q=https://www.coursera.org/learn/design-social-good-prepare-for-jobs  
+
+重点： 完成最后一个社会公益项目，整理简历，准备面试。  
+
+
+-------
+
 路线规划
 
 **1、需求解构与信息架构 🏗️：**
@@ -59,49 +103,7 @@ Google UX 设计专业证书（Google UX Design Professional Certificate）是�
 
 -------
 
-第一阶段：夯实理论基础
-Course 1: Foundations of User Experience (UX) Design 
-https://www.coursera.org/learn/foundations-user-experience-design
 
-重点： 了解 UX 行业、基本术语以及设计冲刺。
-
-Course 2: Start the UX Design Process: Empathize, Define, and Ideate
-https://www.coursera.org/learn/start-ux-design-process
-
-重点： 学习用户调研、创建用户画像、确定设计痛点。
-
-
-第二阶段：动手原型设计
-Course 3: Build Wireframes and Low-Fidelity Prototypes
-https://www.coursera.org/learn/wireframes-low-fidelity-prototypes
-
-重点： 开始用 Figma 画草图，建立初级原型逻辑。
-
-Course 4: Conduct UX Research and Test Early Concepts
-https://www.google.com/search?q=https://www.coursera.org/learn/ux-research-testing
-
-重点： 学习如何通过测试发现你设计中的错误。
-
-
-第三阶段：精进视觉与多平台
-Course 5: Create High-Fidelity Designs and Prototypes in Figma
-https://www.google.com/search?q=https://www.coursera.org/learn/high-fidelity-designs-prototypes
-
-重点： 让你的设计看起来像个真实的、精美的 App。
-
-Course 6: Responsive Web Design in Adobe XD
-https://www.coursera.org/learn/responsive-web-design-adobe-xd
-
-重点： 学习网页端（电脑、平板、手机）的适配。
-
-第四阶段：收官作品集
-Course 7: Design a User Experience for Social Good & Prepare for Jobs
-https://www.google.com/search?q=https://www.coursera.org/learn/design-social-good-prepare-for-jobs
-
-重点： 完成最后一个社会公益项目，整理简历，准备面试。
-
-
--------
 
 
 
