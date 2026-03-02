@@ -1,5 +1,5 @@
 第一阶段：夯实理论基础  
-Course 1: Foundations of User Experience (UX) Design   
+Course 1: **Foundations of User Experience (UX) Design !!!**   
 https://www.coursera.org/learn/foundations-user-experience-design  
 
 重点： 了解 UX 行业、基本术语以及设计冲刺。  
@@ -11,7 +11,7 @@ https://www.coursera.org/learn/start-ux-design-process
 
 
 第二阶段：动手原型设计  
-Course 3: **Build Wireframes and Low-Fidelity Prototypes**  
+Course 3: **Build Wireframes and Low-Fidelity Prototypes !!!**  
 https://www.coursera.org/learn/wireframes-low-fidelity-prototypes  
 
 重点： 开始用 Figma 画草图，建立初级原型逻辑。  
@@ -23,7 +23,7 @@ https://www.google.com/search?q=https://www.coursera.org/learn/ux-research-testi
 
 
 第三阶段：精进视觉与多平台  
-Course 5: **Create High-Fidelity Designs and Prototypes in Figma**  
+Course 5: **Create High-Fidelity Designs and Prototypes in Figma !!!**  
 https://www.google.com/search?q=https://www.coursera.org/learn/high-fidelity-designs-prototypes  
 
 重点： 让你的设计看起来像个真实的、精美的 App。  
