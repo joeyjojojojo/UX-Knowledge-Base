@@ -1,0 +1,128 @@
+
+### Universal design, inclusive design, and equity-focused design  
+通用设计，包容性设计，以公平为中心的设计  
+
+one-size-fits-all approach, isn't a great solution.    
+solve for one, extend to many, making design choices that take into account personal identifiers like ability, race, economic status, language, age, and gender.  
+equity-focused design  
+>>> issues of under-representation in designing  
+
+*** Designing products, devices, services, or environments for people with disabilities is called accessibility. Accessibility is just one aspect of inclusive design   
+
+equality, 输入端公平    
+equity, 输出端公平    
+
+
+### Get to know platforms  
+same website on multiple platforms, such as desktop, mobile web, mobile apps, tablets, wearables, TVs, smart displays, and more.    
+
+focus on one platform first when you build a new product, the platform you select should be the one that best meets your end user's needs.   
+Later, you can design for additional platforms.  
+
+have a consistent brand identity. In this case, the brand identity refers to the visual appearance and voice of a company.   
+
+
+### Design for different platforms  
+user behavior  
+An average mobile session is 72 seconds, while the average desktop session is 150 seconds, more than twice as long.   
+
+Mobile users tend to be goal oriented, and they're focused on completing a single task on mobile phones. Gestures like tapping and swiping help users move around the screen.  
+
+Responsive web design allows a website to change automatically, depending on the size of the device.  
+ 
+*** a few best practices when designing for mobile-user experiences 
+1、call to action buttons should be placed front and center, allowing the user to easily complete the desired task, like joining an email list or adding an item to their shopping cart.   
+2、navigation menus should be short and simple. We want to simplify the user experience on mobile, so menu options should only highlight the core functions of the product.  
+3、use gestures that users already do, like tapping and swiping. Gestures should be intuitive and familiar to users.   
+4、design for both directions a phone might be held. the vertical portrait view, the horizontal landscape view  
+5、reduce visual clutter. Mobile phones have smaller screen sizes. So it's important to keep the visual experience simple. That was a lot of new information to take in.   
+
+
+阅读材料：Designing cross-platform experiences  
+https://www.coursera.org/learn/foundations-user-experience-design/supplement/5IGN9/designing-cross-platform-experiences   
+
+
+### User-centered design   
+the user-centered design process has four steps: understand, specify, design, and evaluate.    
+
+Iteration means doing something again, by building on previous versions and making tweaks（对某个设计或产品进行小的调整或改动）  
+ 
+阅读材料：Who are my users?  
+https://www.coursera.org/learn/foundations-user-experience-design/supplement/qBXcc/who-are-my-users  
+
+
+### Assistive technology  
+The term assistive technology, or AT for short, is used to describe any products, equipment, and systems that enhance learning, working, and daily living for people with disabilities.   
+
+assistive technologies, including color modification, voice control, screen readers, and alternative text.  
+AT covers a wide range of devices, like prosthetics, pointing devices, electric wheelchairs, power lifts, eye gaze and head trackers, and a whole lot more.   
+假肢，指点设备，电动轮椅，升降机 
+AT can also encompass something as low tech as a pencil holder.  
+
+Color modification, like high contrast mode or dark mode on a device, increases the contrast of colors on a screen.   
+High contrast makes the interface easier to see for people with low vision.   
+Color modification also helps anyone who might experience eye strain when viewing screens in the dark or midday, when the sun is creating an intense glare.   
+Lots of people use it just because it's easier on the eyes.   
+
+
+voice control, switch devices 
+help people with limited dexterity and can serve as an alternative to a keyboard or mouse
+for people with limited motor ability
+
+
+Screen readers, for people with limited vision.
+Screen readers also read any interactive elements, like buttons, along with non visible text, like the button names, and any alternative text for images.  
+
+Alternative text, or alt text, helps translate a visual user interface into a text-based user interface.   
+Alt text is also super helpful for those with low bandwidth connections, too. If your device is unable to maintain a connection to the internet, it may struggle to load a big file or image.   
+网络连接速度较慢或数据传输能力有限  
+Alt text is useful for context when an image fails to load.   
+
+speech to text  hands-free experience   
+
+
+阅读材料：Additional resources on designing for accessibility  
+https://www.coursera.org/learn/foundations-user-experience-design/supplement/m9u1P/additional-resources-on-designing-for-accessibility   
+
+阅读材料：User-centered design and assistive technology  
+https://www.coursera.org/learn/foundations-user-experience-design/supplement/upRkP/user-centered-design-and-assistive-technology  
+
+
+阅读材料：Glossary terms from module 2  
+https://www.coursera.org/learn/foundations-user-experience-design/supplement/aM5y4/glossary-terms-from-module-2  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
