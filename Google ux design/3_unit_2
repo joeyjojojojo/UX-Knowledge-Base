@@ -1,0 +1,121 @@
+
+### The basics of information architecture (IA)  
+oganizes content to help users understand where they are in a product and where the information they want is.  
+
+easy to use: 用户能快速、凭直觉地找到想要的信息  
+通过用户调研、市场已有产品的信息架构方式，启发你的信息架构方案  
+熟知 the users, their goals, and their behaviors 是创建有效信息架构方案的关键，类似于创建了一幅信息地图    
+
+** Strong IA also helps engineers understand how to organize the data, so the eventual development of the product matches the visual designs you've created.  
+** an information architecture that's flexible allows your ideas to grow and iterate with the design.  
+** understanding of how the different screens in the app will fit together and how the user will move or navigate between those screens.  
+
+信息结构 >> 线框图 清晰地信息结构可指引线框图设计  
+
+
+阅读材料：Designing the information architecture of apps  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/uOCQG/designing-the-information-architecture-of-apps  
+
+
+### Create paper wireframes  
+
+a wireframe is a basic outline of a digital experience, like an app or website, that's made up of lines and simple shapes.   
+goals：establish the basic structure of a page and to highlight the intended function of each element.   
+focus on the structure and function before visual elements like color or fonts are added to the mix.  
+
+step1：quick list of the information that needs to go on the page  
+step2: 经验法则 / 粗略的指导原则 It's a good rule of thumb to try to create at least 5 different versions of how you want to structure information on a page.   
+** 尝试创建至少五个不同的版本来展示信息结构，这样做可以帮助你探索多种创意，找到最合适的设计方案。wireframe阶段的目标就是探索大量ideas, be creative and try new ideas      
+
+step3: Review the versions of the wireframe you came up with and add a star next to the pieces you like most. 标记各方案中自己最喜欢的部分 wireframe elements      
+step4：with the attention on the best of your ideas, you can narrow down the parts of your wireframe that you want to explore further in a digital wireframe.   
+** 挑选 2~3 版创意制作成电子版 wireframe  
+
+
+阅读材料：Review: Create paper wireframes  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/eC08k/review-create-paper-wireframes  
+
+
+
+### Transition from paper to digital wireframes  
+
+are you ready to move on to a digital wireframe?  
+1、Is my paper wireframe complete?   
+2、Have I received feedback on my paper wireframe?   
+3、Am I ready to consider basic visual cues?   
+
+创建 digital wireframe 的注意事项  
+1、use actual content for important pieces of text, instead of all placeholder text. 重要的部位尽量使用真实的文案内容    
+2、you should hold back on adding expressive content, like color or images, into your wireframe for now. 暂时不要添加过于丰富的内容，比如颜色或图片，专注线框的布局和功能性，先确保功能结构清晰      
+
+from paper wireframe to digital wireframe, to get the structure right, making your design cleaner.  
+
+
+阅读材料：Create a Figma account  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/jEe0v/create-a-figma-account  
+
+
+
+### Create digital wireframes in Figma  
+把 paper wireframe 导入Figma，开始制作 digital wireframe（课程中讲解操作过程，跟着做了一遍）  
+
+** carousel 轮播图，pagination indicator 分页指示器  
+
+** 按钮是 call to actiion 元素，如果他是你最希望用户点击的页面位置，可以放在中间、使用较大按钮、使其 obvious 
+
+
+### Figma 功能简介 Optional - Learn from Figma: Create wireframes for an app  
+画布 Canvas 最大长度 65000  
+Frame 框架？页面容器？把他理解为一个独立页面，有固定宽高、子元素约束位置（改变Frame宽高时，使元素始终固定在相对位置、维持元素的宽高比例关系）、可设置溢出、可自动布局   
+组件 Components, building blocks of our designs, they can be basic UI elements like buttons or icons, or more elaborate compositions like toolbars and menus.   
+组件库 Libraries are collections of components and styles.   
+design system，设计系统 = 标准化组件库 + 代码实现指导原则，combine component libraries with standards and guidelines for implementing them in code.  
+*** main component，instances 主组件、实例  
+
+
+** 如何创建 Component library，在不同文件间重复使用？
+** 导入共享的 library，可直接使用其中的组件，比如 wireframe 中的占位元素，提高 wireframe 或 prototype 效率  
+>> 需要pro版  
+
+
+
+### Use Gestalt Principles when creating wireframes  
+
+a few principles to make your designs even more useable and intuitive.   
+
+Gestalt principles  
+similarity, proximity, and common region.  —— most commonly used     
+
+Gestalt principles describe how humans group similar elements, recognize patterns, and simplify complex images when we perceive objects.  
+You can use the principles to organize content on apps and websites so it's visually pleasing and easier to understand.  
+
+our brains are designed to make meaning at a glance  
+
+
+similarity.  
+This principle means that elements that look similar are perceived to have the same function.   
+Elements might look similar based on their shape, size, or color.   
+>>  takeaway: When designing a wireframe, consider making elements that have a similar function, look similar to give your app a more intuitive user experience.   
+
+
+proximity.  
+This principle states that elements that are close together appear to be more related than things that are spaced farther apart.   
+>> takeaway: When designing your wireframe, put elements that are related close together instead of far apart.  
+
+
+
+common region.   
+This principle states that elements located within the same area are perceived to be grouped together   
+>> takeaway: You can use borders in your wireframes to group elements together.  
+
+
+阅读材料：Learn more about using Gestalt Principles in wireframes  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/0FQtv/learn-more-about-using-gestalt-principles-in-wireframes  
+
+
+
+阅读材料：Glossary terms from course 3, module 2  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/KNKx0/glossary-terms-from-course-3-module-2  
+
+
+
