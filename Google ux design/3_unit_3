@@ -19,16 +19,81 @@ https://marvelapp.com/examples/travel-app，是不是用 Figma 也可以
 
 
 ### Build low-fidelity prototypes in Figma  
-1:32 
+
+wireframes >>> low-fidelity prototype   
+need to show how the user ​navigates the app from one screen to the next.  
+
+为页面画框编码、命名，方便进一步关联跳转逻辑  
+
+点击 Prototype 按钮，打开原型设计侧边栏  
+在页面模块和页面间绘制链接线，形成跳转关系  
+
+点击 播放 按钮，打开 presentation 侧边栏   
+可在虚拟手机界面体验配置好的点击跳转流程  
 
 
+### Optional - Learn from Figma: Create prototypes  
+interaction 细节控制  
+
+触发动作类型 trigger：tap、click、hover   
+animation 动效：默认是 instant，
+With the default Instant animation, ​we lose the context of where we were in the app and how we got there.   
+​Animations guide users through flows, and ​communicate relationships between different parts of our application.  
+>> ways to add easily accessible  
+
+Overlay 
+在 Figma 中，使用 overlay 可以让菜单或其他界面元素在用户的视图上方出现，而不是切换到一个全新的页面。  
+
+Smart animate  
+to reveal the menu when you ​drag the current screen to the right  
+将当前屏幕向右拖动以显示菜单。  
 
 
+move in  
+使菜单在我们现有的屏幕上方出现。  
+查看更多信息，但无需切换新页面   
+点击切换箭头方向，控制 move in 的方向  
+
+move out  
+关闭菜单页时的动效设置   
+
+push  
+to make it feel like we are moving laterally between ​these two screens.  
+使其感觉像是在这两个屏幕之间横向移动。  
+返回上一页，也可以使用这个动效  
+
+back  
+allows us to automatically return users to the previous page without ​having to create separate connections.  
 
 
+prototype 制作好后，可分享给同伴收集 feedback  
+可以在 Figma 中点击同伴头像，实时查看他的浏览过程  
+Observation 模式可以用于 可用性测试  
+同伴可以使用 comment 功能给出反馈、向你提问   
+
+回到编辑视图后，点击 C 可以选中 comment tool, 查看评论内容  
+
+*** 组件颗粒度大小  
+内容Feeds流：头像区 + 图片区 + 点赞/收藏/评论 icon区 == Post 组件【大组件】  
+点赞/收藏/评论 icon区 == icon 组件【小组件】  
+>> 把 小组件 拖进 大组件，可快速更改大组件样式  
+** 整个 feed 区设置为 autolayout，调整每个内容的样式后，整体会自动适配  
 
 
+thumbnails 缩略图，提供关于内容的快速预览    
+inspect panel 检查面板，允许设计师和开发者查看和提取设计元素的代码信息，方便设计还原    
 
+
+阅读材料：Learn more about lo-fi prototyping in Figma  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/r9sJl/learn-more-about-lo-fi-prototyping-in-figma  
+
+
+阅读材料：Review: Create a low-fidelity prototype in Figma  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/4rkNu/review-create-a-low-fidelity-prototype-in-figma  
+
+
+阅读材料：Access Figma prototypes on mobile devices  
+https://www.coursera.org/learn/wireframes-low-fidelity-prototypes/supplement/IzzPr/access-figma-prototypes-on-mobile-devices  
 
 
 
