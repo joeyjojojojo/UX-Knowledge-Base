@@ -1,6 +1,5 @@
 
-https://github.com/joeyjojojojo/UX-Knowledge-Base/blob/main/Tools/simple_html.html 
-
+最简单的HTML：https://joeyjojojojo.github.io/UX-Knowledge-Base/Tools/simple_html.html 
 
 
 
