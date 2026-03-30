@@ -47,14 +47,111 @@ https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/RkKU2/
 
 ### Scale and proportion in UX design  
 
+Scale is a concept that's used to explain the size relationship between ​a given element and the other elements in the design  
+manipulating the size or scale of a single element, like a button, ​is a great technique for creating emphasis  
+show similarity and contrast between elements.  
+scale can be used to communicate visual hierarchy.  
+  eg. Typography  
 
 
-
-
+​Proportion is about the balance or harmony between elements that are scaled.   
+the size relationship ​between elements makes sense.   
+If one element in your design increases in size, then the other elements should also ​increase in size at the same rate in order to remain proportionate.   
+Another way to maintain consistent scale proportions is by including ​certain size specifications for a design in a design system  
 
 
 阅读材料：Use scale and proportion in mockups  
 https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/TAY3N/use-scale-and-proportion-in-mockups  
+
+
+
+### Unity and variety in UX design   
+统一性  
+
+Unity measures how well elements of ​your design work together to communicate an idea.  
+** pleasing to look at, ​clear to the user, ​and easy to understand.   
+Unity can be created by using a consistent color scheme, ​complementary fonts, and consistent spacing.    
+
+Variety, ​which is about varying the elements ​in your design to break up monotony.   
+​Using diverse elements can add ​energy and pizzaz to a design.   
+using different shapes, ​colors, textures, and patterns.  
+variety can help break up predictable patterns.  
+
+
+check list:  
+Did I use colors in a consistent and purposeful way? ​  
+Did the typefaces I used work well together?   
+And is there enough variety ​to keep my design interesting?
+
+
+Variety can be used strategically ​to add visual weight and create emphasis.  
+news outlet, The breaking news story background might ​turn a bright color like red or yellow. ​  
+Adding this variety to the notification helps break ​the consistency and lends more urgency to the story.   
+guide users to ​press a button or divert ​their attention to a section of the page. ​  
+
+​Variety in texture, color, ​typography, and shape can make all the difference  
+Be careful: Too much variety can reduce ​harmony and make it harder to read important info.  
+
+
+阅读材料：Use unity and variety in mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/wgX84/use-unity-and-variety-in-mockups   
+
+
+阅读材料：Review: Apply visual design principles to project mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/bzV6Y/review-apply-visual-design-principles-to-project-mockups  
+
+
+
+### Apply Gestalt Principles to mockups  
+
+Gestalt principles describe ​how humans group similar elements, ​recognize patterns, and simplify ​complex images when we perceive objects.   
+the human brain ​will attempt to simplify and organize ​complex images by subconsciously ​arranging the parts into a cohesive whole.   
+brain is wired to see ​structure, logic, and patterns.  
+** all the individual design choices we've been making come ​together  
+** step back, review at the sight of the overall project  
+
+
+three of the Gestalt principles: ​similarity, proximity, and common region.   
+其他 closure, continuation, and symmetry.  
+
+
+The principle of similarity states that elements ​that look similar are ​perceived to have the same function.  
+similarity focuses on things that look or ​behave the same way and ​how the user will relate those items.   
+点击按钮类，不同页面始终使用同一颜色，引导操作行为  
+Your brain automatically groups these orange elements. ​Because they are the same color, ​they are perceived to have the same function.   
+
+形状，代表同一类内容，比如联系人头像  
+
+
+the principle of ​proximity, which states that elements ​that are close together appear to be more ​related than elements that are spaced farther apart.  
+humans ​perceive objects close to each other as connected.   
+The closeness of these buttons ​lets you know that they're related.   
+he space between these elements ​indicates that they are not related.  
+
+
+the principle of common region, ​which states that elements located within ​the same area are perceived to be grouped together. ​  
+共同区域？区块？  
+it has less to do with ​spacing elements apart and more to do ​with using visual elements to form sections.   
+与 邻近性 不同，无关于元素之间的间距，而与使用视觉元素来形成区域有关  
+Using the principle of common region, ​your eye automatically groups ​the content that's in the same area together.   
+** add a border  
+** background  
+
+Gestalt principles is that we should make sure ​that our designs work with the way ​our minds naturally organize elements.  
+Gestalt principles ​can help create visual balance.   
+Visual balance is the sense that a design is ​equally weighted on both sides of its emphasized center.  
+Visual balance gives the ​design a feeling of completeness. 完整性，各个部分都协调一致，形成一个完整的视觉效果     
+
+
+阅读材料：Learn about additional Gestalt Principles  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/lfeh2/learn-about-additional-gestalt-principles  
+
+
+阅读材料：Review: Apply Gestalt principles to project mockups  
+https://www.coursera.org/learn/high-fidelity-designs-prototype/supplement/eyaIN/review-apply-gestalt-principles-to-project-mockups  
+
+
+
 
 
 
