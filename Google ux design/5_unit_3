@@ -1,1 +1,39 @@
 
+### Introduction to design systems   
+A design system is a series of reusable elements and guidelines that allow teams ​to design and develop a product following predetermined standards.  
+like brand guidelines, components, ​color palettes, and more.   
+Some of the visual elements frequently included in the design system are color, ​iconography, layout, copy, animation, elevation, typography, and illustration.  
+
+Most design systems include visual styles, guidelines for ​how to apply them, UI patterns, and supporting code for developers. ​  
+visual styles. ​Defining the styles for core visual design elements, like typography, color palettes, ​and iconography, helps companies express their brand more consistently.   
+he guidelines. ​This is where the design principles, editorial guidelines, and ​implementation guidelines are defined.  
+》》 Clear rules about how certain components or ​styles should be used within a product help designers stay consistent.  
+UI patterns include   
+》 elements like text, color, or icons;  
+》 ​components, which are made up of elements, like a button or form label;   
+》 ​modules, which are groups of components, ​like a header with a logo or a navigation bar at the top of the page;  
+》 templates, which are groups of modules put together to form pages.  
+>>> each of these sections of a design system usually ​includes detailed notes about which elements, components, ​modules, and templates are the most important, and how often to use each one.   
+
+design systems support code for developers. ​To help developers build out designs correctly, design systems often include ​the code to create each of the provided elements or components.  
+
+
+### Benefits of design systems  
+create ​consistency for designers and users  
+eg. always use ​orange buttons with rounded edges in their designs.     
+they ​help reinforce a company's brand identity.  
+they're scalable.describes a system that's able ​to maintain performance levels when workload increases. ​    
+save time and ​money by increasing efficiency for individuals and teams.   
+》》》 updating ​the colors or typography in the style guide, ​to defining components and ​designing templates.   
+
+
+
+
+
+
+
+
+
+
+
+
